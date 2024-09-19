@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilos/style3.css">
+    <link rel="stylesheet" href="estilos/media-query-cad.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img3">
+                <!--Imagem via CSS-->
+            </div>
+            <div id="form2">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <form action="cadastro.php" method="post" autocomplete="on">
+                        <label for="inome"><strong>Nome:</strong> </label>
+                        <input type="text" name="Nome" id="inome" placeholder="Nome Completo" minlength="20" maxlength="35" required> <br>
+                        <label for="itel"><strong>Telefone:</strong></label>
+                        <input type="tel" name="tel" id="itel" min="9" max="14" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"> <br>
+                        <label for="idata"><strong>Data de nascimento:</strong> </label>
+                        <input type="date" name="data" id="idata"> <br>
+                        <label for="isexo"><strong>Sexo:</strong> </label>
+                        <input type="radio" name="sexo" id="imasc">Masculino
+                        <input type="radio" name="sexo" id="ifem">Feminino <br>
+                        <label for="imail"><strong>Email:</strong> </label>
+                        <input type="email" name="email" id="imail" placeholder="example@example.com" minlength="20" maxlength="30"> <br>
+                        <label for="isenha"><strong>Senha:</strong></label>
+                        <input type="password" name="senha" id="isenha" minlength="8">
+
+                        <div class="botao">
+                            <input type="submit" value="Registrar">
+                            <input type="reset" value="Limpar Dados">
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+        <div id="back">
+            <a href="index.html" target="_self" rel="prev">voltar ao inicio.</a>
+        </div>
+    </main>
+</body>
+</html>

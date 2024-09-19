@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação</title>
+    <link rel="stylesheet" href="estilos/style4.css">
+    <link rel="stylesheet" href="estilos/media-query-rec.css">
+</head>
+<body>
+    <main>
+        <h1>Recuperação de senha</h1>
+        <section id="login">
+            <div id="img4">
+
+            </div>
+            <div class="rec">
+                <p>para recuperar sua senha, insira um email ou número de telefone vinculado a sua conta</p>
+                <h2 class="t2">Digite um email</h2>
+                <form action="recuperação.php" method="post">
+                <label for="imail"></label>
+                <input type="email" name="email" id="imail" minlength="20" maxlength="30" required placeholder="example@example.com">
+            </div>
+            <div class="rec">
+                <h2 class="t2">Insira um número de celular</h2>
+                <form action="recuperação.php" method="post">
+                    <label for="itel"></label>
+                    <input type="tel" name="tel" id="itel" min="9" max="14" required placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                </form>
+            </div>
+            
+            <div class="botao">
+                <input type="submit" value="Receber Link de recuperação" >
+                <a href="login.html"><input type="button" value="Voltar a Tela de Login"></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
