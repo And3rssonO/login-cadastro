@@ -18,18 +18,18 @@
                     <legend>Dados Pessoais</legend>
                     <form action="cadastro.php" method="post" autocomplete="on">
                         <label for="inome"><strong>Nome:</strong> </label>
-                        <input type="text" name="Nome" id="inome" placeholder="Nome Completo" minlength="20" maxlength="35" required> <br>
+                        <input type="text" name="Nome" id="inome" required placeholder="Nome Completo" minlength="20" maxlength="35"> <br>
                         <label for="itel"><strong>Telefone:</strong></label>
-                        <input type="tel" name="tel" id="itel" min="9" max="14" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"> <br>
+                        <input type="tel" name="tel" id="itel" required min="9" max="14" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"> <br>
                         <label for="idata"><strong>Data de nascimento:</strong> </label>
-                        <input type="date" name="data" id="idata"> <br>
+                        <input type="date" name="data" id="idata" required> <br>
                         <label for="isexo"><strong>Sexo:</strong> </label>
                         <input type="radio" name="sexo" id="imasc">Masculino
                         <input type="radio" name="sexo" id="ifem">Feminino <br>
                         <label for="imail"><strong>Email:</strong> </label>
-                        <input type="email" name="email" id="imail" placeholder="example@example.com" minlength="20" maxlength="30"> <br>
+                        <input type="email" name="email" id="imail" required placeholder="example@example.com" minlength="20" maxlength="30"> <br>
                         <label for="isenha"><strong>Senha:</strong></label>
-                        <input type="password" name="senha" id="isenha" minlength="8">
+                        <input type="password" name="senha" id="isenha" required minlength="8">
 
                         <div class="botao">
                             <input type="submit" value="Registrar">
