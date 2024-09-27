@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style2.css">
     <link rel="stylesheet" href="estilos/media-query-log.css">
 </head>
@@ -17,12 +18,14 @@
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="caixa">
                         <h1>Faça seu login!</h1>
-                        <label for="imail"><strong>Email :</strong> </label>
+                        <span class="material-symbols-outlined">mail</span>
                         <input type="email" name="email" id="imail" required minlength="30" max="50" autocomplete="email" placeholder="example@example.com">
+                        <label for="imail"><strong>Email :</strong> </label>
                     </div>
                     <div class="caixa">
-                        <label for="isenha"><strong>Senha: </strong></label>
+                        <span class="material-symbols-outlined">vpn_key</span>
                         <input type="password" name="senha" id="isenha" required minlength="8">
+                        <label for="isenha"><strong>Senha: </strong></label>
                     </div>
 
                     <div class="botão">

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style4.css">
     <link rel="stylesheet" href="estilos/media-query-rec.css">
 </head>
@@ -17,12 +18,15 @@
             <div class="rec">
                 <p>para recuperar sua senha, insira um email ou número de telefone vinculado a sua conta</p>
                 <h2 class="t2">Digite um email</h2>
+                <span class="material-symbols-outlined">mail</span>
                 <form action="recuperação.php" method="post">
                 <label for="imail"></label>
                 <input type="email" name="email" id="imail" required minlength="20" maxlength="30" placeholder="example@example.com">
+                </form>
             </div>
             <div class="rec">
                 <h2 class="t2">Insira um número de celular</h2>
+                <span class="material-symbols-outlined">smartphone</span>
                 <form action="recuperação.php" method="post">
                     <label for="itel"></label>
                     <input type="tel" name="tel" id="itel" required min="9" max="14" placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">

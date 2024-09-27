@@ -62,10 +62,11 @@ section#login > div#form > form > div.caixa > h1{
 
 section#login > div#form > form > div.caixa > input{
     margin-top: 20px;
+    padding: 5px;
 }
 
 section#login > div#form > form > div.caixa > label{
-    margin-left: 10px;
+    display: none;
 }
 
 section#login > div#form > form > div.botão > input{
@@ -80,3 +81,8 @@ section#login > div.esq >a{
     padding: 5px;
 }
 
+form > div.caixa > span{
+    font-size: 1.3em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
