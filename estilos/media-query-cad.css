@@ -18,6 +18,11 @@
     section#login > div#form2{
         float: left;
     }
+
+    section#login > div#form2 > fieldset > legend{
+        margin-left: 120px;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -43,5 +48,10 @@
         position: absolute;
         top: 95%;
         left: 0%;
+    }
+
+    section#login > div#form2 > fieldset > legend{
+        margin-left: 220px;
+        margin-bottom: 15px;
     }
 }

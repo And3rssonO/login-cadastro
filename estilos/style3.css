@@ -53,6 +53,10 @@ section#login > div#form2 > fieldset > form > input{
     margin: 5px;
 }
 
+section#login > div#form2 > fieldset > form > label{
+    margin-left: 10px;
+}
+
 section#login > div#form2 > fieldset {
     border: none;
     margin-top: 10px;
@@ -73,4 +77,5 @@ section#login > div#form2 > fieldset > form > div.botao{
 section#login > div#form2 > fieldset > form > div.botao > input{
     margin-left: 15px;
     margin-top: 15px;
+    padding: 3px;
 }
